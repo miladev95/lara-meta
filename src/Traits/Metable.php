@@ -2,8 +2,8 @@
 
 namespace Miladev\LaravelMeta\Traits;
 
-use Miladev\LaravelMeta\Models\Meta;
 use Illuminate\Support\Facades\DB;
+use Miladev\LaravelMeta\Models\Meta;
 
 trait Metable
 {
