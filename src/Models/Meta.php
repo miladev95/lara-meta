@@ -13,7 +13,7 @@ class Meta extends Model
 
     public $timestamps = false;
 
-    /**     
+    /**
      * @return string
      */
     public function getTable(): string

@@ -2,8 +2,8 @@
 
 namespace Miladev\LaravelMeta\Tests;
 
-use Miladev\LaravelMeta\MetaServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Miladev\LaravelMeta\MetaServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra

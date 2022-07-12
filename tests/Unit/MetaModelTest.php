@@ -2,9 +2,9 @@
 
 namespace Miladev\LaravelMeta\Tests\Unit;
 
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Miladev\LaravelMeta\Tests\Models\Post;
 use Miladev\LaravelMeta\Tests\TestCase;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class MetaModelTest extends TestCase
 {
