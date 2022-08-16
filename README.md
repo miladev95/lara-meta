@@ -83,6 +83,7 @@ $post->saveMeta('meta_key_here', 'value_here');
 $post->getMeta('meta_key_here', 'default_value');
 $post->updateMeta('meta_key_here', 'value_here_new');
 $post->deleteMeta('meta_key_here');
+$post->findMeta('value_here');
 ```
 
 ## Contribute
