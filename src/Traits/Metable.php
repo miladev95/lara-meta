@@ -16,7 +16,7 @@ trait Metable
 
     public function findMeta(string $value)
     {
-        $meta = $this->metas()->where('value' , 'LIKE', '%' . $value . '%')->get();
+        $meta = $this->metas()->where('value', 'LIKE', '%' . $value . '%')->get();
 
         return $meta;
     }
