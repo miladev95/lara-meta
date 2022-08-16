@@ -14,6 +14,13 @@ trait Metable
         return $meta ? $meta->value : $default;
     }
 
+    public function findMeta(string $value)
+    {
+        $meta = $this->metas()->where('value' , 'LIKE', '%' . $value . '%')->get();
+
+        return $meta;
+    }
+
     public function saveMeta(string $key, string $value)
     {
         return $this->updateMeta($key, $value);

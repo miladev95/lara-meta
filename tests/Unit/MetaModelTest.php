@@ -26,6 +26,23 @@ class MetaModelTest extends TestCase
     }
 
     /** @test */
+    public function test_find_meta_with_value()
+    {
+        $post = new Post();
+        $post->id = rand(1,99);
+
+        $post->saveMeta('fake_key' , 'fake value');
+
+        $post->saveMeta('mili', 'my value');
+
+        $post->saveMeta('mili2', 'my');
+
+        $meta_value = $post->findMeta('my');
+    
+        $this->assertEquals(true,in_array('mili2',$meta_value->toArray()[1]));
+    }
+
+    /** @test */
     public function test_updating_meta_with_model()
     {
         $post = new Post();
