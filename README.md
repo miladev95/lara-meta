@@ -4,9 +4,9 @@
 [![License](https://poser.pugx.org/miladev/lara-meta/license)](//packagist.org/packages/miladev/lara-meta)
 [![Total Downloads](https://poser.pugx.org/miladev/lara-meta/downloads)](//packagist.org/packages/miladev/lara-meta)
 
-<a href="https://github.com/miladev/lara-meta/issues"><img src="https://img.shields.io/github/issues/miladev/lara-meta.svg" alt=""></a>
-<a href="https://github.com/miladev/lara-meta/stargazers"><img src="https://img.shields.io/github/stars/miladev/lara-meta.svg" alt=""></a>
-<a href="https://github.com/miladev/lara-meta/network"><img src="https://img.shields.io/github/forks/miladev/lara-meta.svg" alt=""></a>
+<a href="https://github.com/miladev95/lara-meta/issues"><img src="https://img.shields.io/github/issues/miladev95/lara-meta.svg" alt=""></a>
+<a href="https://github.com/miladev95/lara-meta/stargazers"><img src="https://img.shields.io/github/stars/miladev95/lara-meta.svg" alt=""></a>
+<a href="https://github.com/miladev95/lara-meta/network"><img src="https://img.shields.io/github/forks/miladev95/lara-meta.svg" alt=""></a>
 
 Save metadata (key, value) with any model.
 
