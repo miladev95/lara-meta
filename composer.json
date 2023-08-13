@@ -37,7 +37,6 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true,
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.8",
         "orchestra/testbench": "^7.5",
