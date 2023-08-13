@@ -1,7 +1,6 @@
 {
     "name": "miladev/lara-meta",
     "description": "Save meta with any model.",
-    "type": "package",
     "version": "1.0",
     "license": "MIT",
     "authors": [
