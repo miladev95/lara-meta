@@ -2,7 +2,7 @@
     "name": "miladev/lara-meta",
     "description": "Save meta with any model.",
     "type": "package",
-    "version": "0.2.0",
+    "version": "1.0",
     "license": "MIT",
     "authors": [
         {
@@ -38,7 +38,7 @@
             ]
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true,
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.8",
