@@ -14,7 +14,7 @@ class MetaModelTest extends TestCase
     public function test_saving_and_getting_meta_with_model()
     {
         $post = new Post();
-        $post->id = rand(1, 99);
+        $post->save();
 
         $meta = $post->saveMeta('fake_key', 'fake value');
 
@@ -29,7 +29,7 @@ class MetaModelTest extends TestCase
     public function test_find_meta_with_value()
     {
         $post = new Post();
-        $post->id = rand(1, 99);
+        $post->save();
 
         $post->saveMeta('fake_key', 'fake value');
 
@@ -39,14 +39,15 @@ class MetaModelTest extends TestCase
 
         $meta_value = $post->findMeta('my');
 
-        $this->assertEquals(true, in_array('mili2', $meta_value->toArray()[1]));
+        $this->assertTrue($meta_value->pluck('key')->contains('mili'));
+        $this->assertTrue($meta_value->pluck('key')->contains('mili2'));
     }
 
     /** @test */
     public function test_updating_meta_with_model()
     {
         $post = new Post();
-        $post->id = rand(1, 99);
+        $post->save();
 
         $post->saveMeta('fake_key', 'fake value');
         $post->updateMeta('fake_key', 'real value');
@@ -59,7 +60,7 @@ class MetaModelTest extends TestCase
     public function test_deleting_meta_with_model()
     {
         $post = new Post();
-        $post->id = rand(1, 99);
+        $post->save();
 
         $post->saveMeta('fake_key', 'fake value');
         $meta_value = $post->getMeta('fake_key');
@@ -69,6 +70,7 @@ class MetaModelTest extends TestCase
         $post->deleteMeta('fake_key');
         $meta_value = $post->getMeta('fake_key');
 
-        $this->assertEquals(null, $meta_value);
+        // getMeta returns the default string when missing
+        $this->assertEquals('', $meta_value);
     }
 }
