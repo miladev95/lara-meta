@@ -3,8 +3,8 @@
 namespace Miladev\LaravelMeta\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 use Miladev\LaravelMeta\MetaServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 

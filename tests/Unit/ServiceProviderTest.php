@@ -13,4 +13,3 @@ class ServiceProviderTest extends TestCase
         $this->assertArrayHasKey('table_name', config('meta'));
     }
 }
-
