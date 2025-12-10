@@ -2,8 +2,8 @@
 
 namespace Miladev\LaravelMeta\Tests\Unit;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Database\Query\Builder as QueryBuilder;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Miladev\LaravelMeta\Tests\Models\Post;
 use Miladev\LaravelMeta\Tests\TestCase;
 
@@ -47,4 +47,3 @@ class MetableTraitTest extends TestCase
         $this->assertInstanceOf(QueryBuilder::class, $table);
     }
 }
-
